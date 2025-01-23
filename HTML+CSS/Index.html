@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Portofolio.css">
+</head>
+
+<body>
+    <!--header met logo, zelfde op alle pagina's-->
+    <header>
+        <div class="logo">AC</div>
+        <nav class="navigatie">
+            <a href="Index.html">Home</a>
+            <a href="Aboutpagina.html">About</a>
+            <a href="projectsandtools.html">Projects</a>
+            <a href="Contactpagina.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="Developer">Software Developer</div>
+
+    <div class="Beschrijving">
+        <div class="text-left">Hoi ik ben Aiden, een opkomende software-developer die opzoek is naar een stage in
+            leerjaar 2.</div>
+        <div class="text-right">Ik ben een hardwerkende, gepassioneerde developer die graag bedrijfservaring wil opdoen
+            bij uw bedrijf.</div>
+    </div>
+    <!--kernkwaliteiten ij cirkels-->
+    <div class="moeilijkstuk">
+        <div class="cirkels-met-kwaliteiten">
+            <div class="cirkel">Kwaliteitsgericht</div>
+            <div class="cirkel">Leergierig</div>
+            <div class="cirkel">Klantvriendelijk</div>
+            <div class="cirkel">1+ jaar ervaring</div>
+            <div class="cirkel">3 projecten gemaakt</div>
+            <div class="cirkel">Team player</div>
+            <div class="cirkel">Ambitieus</div>
+        </div>
+    </div>
+    <!--footer met socials(voor sier en fulling is geen knop) zelfde op alle pagina's-->
+    <footer>
+        <div class="socials">
+            <img src="https://i1.wp.com/multarte.com.br/wp-content/uploads/2018/11/logo-whatsapp-png.png?fit=1600,1600&ssl=1"
+                alt="whatsapp">
+            <img src="https://www.pngarts.com/files/8/Black-Github-Logo-PNG-Image.png" alt="github">
+            <img src="https://logodix.com/logo/558756.png" alt="linkedin">
+        </div>
+    </footer>
+    <!-- java scrypt voor alle pagina's-->
+    <script>
+        const circles = document.querySelectorAll('.cirkel');
+
+        circles.forEach(circle => {
+            circle.addEventListener('mouseover', () => {
+                circle.style.transform = 'scale(1.1)';
+                circle.style.transition = 'transform 0.3s';
+            });
+
+            circle.addEventListener('mouseout', () => {
+                circle.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>
